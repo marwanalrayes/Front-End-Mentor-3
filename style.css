@@ -1,0 +1,245 @@
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url(/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+*{
+    font-family:"Hanken Grotesk" ;
+}
+.contener{
+    width: 620px;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 0px 8px hsla(241, 81%, 54%, 0.079);
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-top:10%;
+}
+/* Responsive لشاشات 375px */
+@media (max-width: 375px) {
+    .contener {
+        width: 100%;
+        /* استخدام عرض الشاشة بالكامل */
+        margin: 5% auto;
+        flex-direction: column;
+        /* ترتيب عمودي للعناصر */
+        padding: 15px;
+        /* إضافة padding داخلي للحاوية */
+        box-sizing: border-box;
+        /* منع تجاوز العناصر حدود الحاوية */
+    }
+
+    .leftSide {
+        width: 100%;
+        /* عرض الجهة الزرقاء ليكون 100% */
+        order: 1;
+        /* الجهة الزرقاء تظهر أولاً */
+        border-radius: 20px 20px 0 0;
+        /* زوايا مستديرة لأعلى */
+        padding: 20px;
+        /* إضافة padding لزيادة التباعد الداخلي */
+    }
+
+    .rightSide {
+        width: 100%;
+        /* عرض الجهة البيضاء ليكون 100% */
+        order: 2;
+        /* الجهة البيضاء تظهر بعد الجهة الزرقاء */
+        border-radius: 0 0 20px 20px;
+        /* زوايا مستديرة لأسفل */
+        padding: 20px;
+        /* إضافة padding لزيادة التباعد الداخلي */
+        margin-top: 15px;
+    }
+
+    .cercel {
+        width: 100px;
+        /* تقليل حجم الدائرة */
+        height: 100px;
+        margin: 0 auto 20px auto;
+        /* مركز الدائرة مع مسافة سفلية */
+    }
+
+    .number {
+        font-size: 30px;
+        /* تكبير حجم الرقم لتسهيل القراءة */
+    }
+
+    .Great,
+    .LastP {
+        font-size: 14px;
+        /* تكبير النصوص */
+        text-align: center;
+        /* توسيط النصوص */
+    }
+
+    .Layer-1 {
+        width: 100%;
+        /* عرض المربعات بالكامل */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        /* مسافة بين المربعات */
+        padding: 10px;
+        background-color: hsl(0, 0%, 97%);
+        border-radius: 10px;
+    }
+
+    .Layer-1 .titleOfDiv {
+        font-size: 14px;
+        /* حجم النص داخل المربعات */
+        color: hsl(224, 30%, 27%);
+        text-align: center;
+    }
+
+    input[type="button"] {
+        width: 100%;
+        /* الزر يأخذ عرض الشاشة بالكامل */
+        padding: 12px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}
+.leftSide{
+    background: linear-gradient(to top, hsla(256, 72%, 46%, 1),hsl(252, 100%, 67%));
+    width: 295px;
+    height: 100%;
+    border-radius: 20px;
+    margin-right: auto;
+}
+.FirstParagraph{
+    font-weight:bold; 
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+    color:hsl(241, 100%, 89%) ;
+}
+.cercel{
+    margin-top: 5px;
+    margin-left:20%;
+    background: linear-gradient(to top,hsla(241, 72%, 46%, 0) ,hsla(256, 72%, 46%, 1) );
+    border-radius: 90px;
+    width: 180px;
+    height: 180px;
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    margin-top: 15px;
+    text-align: center;
+}
+.number{
+    margin: 0;
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+}
+.cercelP{
+    color: hsl(241, 100%, 89%);
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 4px;
+}
+.lastText{
+    margin-left: 12%;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    margin-left: 45px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.Great{
+    font-weight: bolder;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.LastP{
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    font-size: 16px;
+    margin-top: 4px;
+}
+.rightSide{
+    width: 295px;
+    height: 100%;
+    margin-top: -2%;
+    margin-right: -5px;
+}
+.Tittle p{
+    color: hsl(224, 30%, 27%);
+    font-size: 20px;
+    font-weight: bolder;
+}
+.Layer-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 9px;
+    height: 55px;
+    width: 235px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    /* إضافة مسافة بين المربعات */
+}
+.Layer-1:nth-child(1) {
+    background-color: hsla(0, 100%, 72%, 0.12);
+    /* لون رد الفعل */
+}
+.Layer-1:nth-child(1) .titleOfDiv {
+    color: hsl(0, 100%, 67%);
+    /* لون العنوان*/
+}
+.Layer-1:nth-child(2)  {
+    background-color: hsla(48, 100%, 72%, 0.12);
+    /* لون الذاكرة */
+}
+.Layer-1:nth-child(2) .titleOfDiv {
+    color: hsl(39, 100%, 56%);
+    /* لون العنوان*/
+}
+
+.Layer-1:nth-child(3) {
+    background-color: hsla(144, 100%, 72%, 0.12);
+    /* لون اللفظي */
+}
+.Layer-1:nth-child(3) .titleOfDiv {
+    color: hsl(166, 100%, 37%);
+    /* لون العنوان*/
+}
+.Layer-1:nth-child(4) {
+    background-color: hsla(240, 100%, 72%, 0.12);
+    /* لون البصري */
+}
+.Layer-1:nth-child(4) .titleOfDiv {
+    color: hsl(234, 85%, 45%);
+    /* لون العنوان*/
+}
+
+.number-1 span {
+    font-weight: bold;
+    color: hsl(224, 30%, 27%);
+}
+.titleOfDiv{
+    margin-right: 60px;
+    font-weight: bold;
+}
+input{
+    margin-top: 17px;
+    color: white;
+    font-weight: bold;
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    border-radius: 40px;
+    height: 48px;
+    align-items: center;
+    width: 245px; ;
+}
